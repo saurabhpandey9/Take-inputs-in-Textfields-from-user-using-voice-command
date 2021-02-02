@@ -1,0 +1,18 @@
+input[type=text] {
+    transition: width 0.4s ease-in-out;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+  .frm{
+    margin: auto;
+    width: fit-content;
+    border: 3px solid #73AD21;
+    padding: 10px;
+  }
+

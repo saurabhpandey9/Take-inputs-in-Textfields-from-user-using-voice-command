@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Textfield from './form';
+import Dictaphone from "./speech";
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Textfield />
+    <Dictaphone/>
   </React.StrictMode>,
   document.getElementById('root')
 );
