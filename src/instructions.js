@@ -13,14 +13,14 @@ function Instructions() {
                 Please press the <b>Spacebar Button</b> to on/off the speech recognition.
             </p>
 
-            <h2>Sample Command for User Interaction : </h2>
+            <h2>Sample Commands for User Interaction : </h2>
 
-            <p> <b>Note:</b> Please use <b>clear</b> command to clear the current transcript generated if any, then use another command.
-            Someone time the length of string become larger and take more time to parse words for comparison hence clear command is required.
+            <p> <b>Note:</b> Please use <b>clear</b> command if required ,to clear the current transcript generated if any, then use any other commands.
+            Sometime the length of string becomea larger and take more time to parse words for comparison hence clear command is required.
             </p>
             <ul>
-                <li>If you want to interfact with any Text Field just take field name and then the value you want to fill like <b><i>Patient id 342345</i></b> 
-                then it will parse everyting after <b> Patient id </b>and fill in the Patient id text-field</li>
+                <li>If you want to interfact with any Text Field just take field name and then the value you want to fill like <b><i> Patient id 342345 </i></b> 
+                then it will parse everyting after <b> Patient id </b>and fill it in Patient id text-field</li>
 
                 <li> This process is similar for all text-fields.</li>
                 <li> Sometimes it stop taking argument , then just say <b>Clear</b> to clear all the garbage transcript and then start Interacting again.</li>
