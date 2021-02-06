@@ -2,13 +2,34 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import Textfield from './form';
-import Dictaphone from "./speech";
+
+import Instructions from "./instructions";
 import reportWebVitals from './reportWebVitals';
+import './Textcss.css';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Textfield />
-    <Dictaphone/>
+    <div>
+      <table className="table1">
+        <tr>
+          <td>
+            <div>
+              <Textfield />
+            </div>
+          </td>
+
+          <td>
+            <div>
+              <Instructions />
+            </div>
+          </td>
+        </tr>
+
+
+      </table>
+
+    </div>
+
   </React.StrictMode>,
   document.getElementById('root')
 );

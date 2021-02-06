@@ -1,11 +1,9 @@
-import React, { useState } from 'react'
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition'
 
 
 var flag =1;
 
 const Dictaphone = () => {
-  const [message, setMessage] = useState('')
   const commands = [
 
     {
@@ -127,6 +125,8 @@ const Dictaphone = () => {
     if (e.keyCode === 32) {
       if (flag === 1) {
         console.log("Start Listening");
+        document.getElementById('micsts').innerHTML  ="Mic is on please Speak";
+        document.getElementById('micsts').style.color ="blue"; 
         resetTranscript()
         SpeechRecognition.startListening({ continuous: true })
         flag = 0
@@ -136,6 +136,8 @@ const Dictaphone = () => {
         console.log("Stop Listening");
         SpeechRecognition.stopListening()
         resetTranscript()
+        document.getElementById('micsts').innerHTML  ="Mic is off please press spacebar to start mic";
+        document.getElementById('micsts').style.color ="red"; 
         flag = 1
       }
     }
@@ -143,8 +145,12 @@ const Dictaphone = () => {
 
   return (
     <div>
-      <p>{message}</p>
-      <p>{transcript}</p>
+
+      <div style={{textAlign:'center'}} >
+      <b ><i><p id="micsts">Please press Spacebar to start SpeechRecognition</p></i></b>
+      </div>
+
+      <p style={{margin:"10px"}}>{transcript}</p>
     </div>
   )
 }
