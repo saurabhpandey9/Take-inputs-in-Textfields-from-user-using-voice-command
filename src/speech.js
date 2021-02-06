@@ -14,7 +14,7 @@ const Dictaphone = () => {
     },
 
     {
-        command: 'patient id *',
+        command: ['patient id *'],
         callback: function (params) {
         document.getElementById("patient id").value= params;
         resetTranscript()
@@ -31,10 +31,8 @@ const Dictaphone = () => {
         }
     },
 
-
-
     {
-        command: 'gender *',
+        command: ['gender *','patient gender *'],
         callback: function (params) {
         document.getElementById("gender").value= params;
         resetTranscript()
@@ -42,7 +40,7 @@ const Dictaphone = () => {
     },
 
     {
-        command: 'age *',
+        command: ['age *','patient age *'],
         callback: function (params) {
         document.getElementById("age").value= params;
         resetTranscript()
@@ -50,7 +48,7 @@ const Dictaphone = () => {
     },
 
     {
-        command: 'referred by *',
+        command: ['referred by *'],
         callback: function (params) {
         document.getElementById("referred by").value= params;
         resetTranscript()
@@ -59,7 +57,7 @@ const Dictaphone = () => {
     },
 
     {
-        command: 'consulted by *',
+        command: ['consulted by *'],
         callback: function (params) {
         document.getElementById("consulted by").value= params;
         resetTranscript()
@@ -67,7 +65,7 @@ const Dictaphone = () => {
     },
 
     {
-        command: 'premedication *',
+        command: ['premedication *'],
         callback: function (params) {
         document.getElementById("premedication").value= params;
         resetTranscript()
@@ -83,7 +81,7 @@ const Dictaphone = () => {
     },
 
     {
-        command: 'stomach *',
+        command: ['stomach *'],
         callback: function (params) {
         document.getElementById("stomach").value= params;
         resetTranscript()
