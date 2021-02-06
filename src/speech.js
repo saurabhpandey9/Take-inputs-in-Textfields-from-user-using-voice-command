@@ -9,6 +9,11 @@ const Dictaphone = () => {
   const commands = [
 
     {
+      command: ['clear','care'],
+      callback: ({ resetTranscript }) => resetTranscript()
+    },
+
+    {
         command: 'patient id *',
         callback: function (params) {
         document.getElementById("patient id").value= params;
@@ -19,7 +24,7 @@ const Dictaphone = () => {
     },
 
     {
-        command: 'patient name *',
+        command: ['patient name *','present name *','present names *'],
         callback: function (params) {
         document.getElementById("patient name").value= params;
         resetTranscript()
@@ -86,7 +91,7 @@ const Dictaphone = () => {
     },
 
     {
-        command: 'duodenum *',
+        command: ['duodenum *','duodenum *','devadanam *'],
         callback: function (params) {
         document.getElementById("duodenum").value= params;
         resetTranscript()
@@ -94,7 +99,7 @@ const Dictaphone = () => {
     },
 
     {
-        command: 'impression *',
+        command: ['impression *'],
         callback: function (params) {
         document.getElementById("impression").value= params;
         resetTranscript()
@@ -102,18 +107,15 @@ const Dictaphone = () => {
     },
 
     {
-        command: 'remarks *',
+        command: ['remarks *','remark *'],
         callback: function (params) {
         document.getElementById("remarks").value= params;
         resetTranscript()
         }
-    },
+    }
 
     
-    {
-      command: 'clear',
-      callback: ({ resetTranscript }) => resetTranscript()
-    }
+    
   ]
 
   const { transcript, resetTranscript } = useSpeechRecognition({ commands })
